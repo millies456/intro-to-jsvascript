@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Jpractice</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <br>
+<p>While this is running!</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+<br>
+
+
+        <a id="ualbany" href = "https://www.washington.edu/accesscomputing/webd2/student/unit5/module2/lesson1.html"
+        target="_blank">goto the university site</a>
+        <br>
+        <button onclick="getlink()">
+        get the link </button>
+        <br>
+        <script>
+            function myFunction(){
+
+var str = "While this is running!";
+
+str = str.fontsize("6").fontcolor("#006400").bold();
+
+document.write (str);
+
+}
+
+            function getlink(){
+               
+                var u =  document.getElementById("ualbany").href;
+                var x = document.getElementById("ualbany").target; 
+  alert('The value of the taget attribute of the link is : '+u);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+      
+      what is your birth year:<input type = 'submit' id='username'>
+      <button onclick="calculate_age()">click me</button>
+      <p id='demo'></p>
+<script>
+    function calculate_age(){
+        var x=document.getElementById('username').value;
+        var y= 2019-x;
+        document.getElementById('demo').innerHTML='yoi must be'+y+'years olds';
+    }
+</script>
